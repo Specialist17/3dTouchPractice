@@ -1,24 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n72-dw-ez2">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mountainsVC" id="BYZ-38-t0r" customClass="MountainsVC" customModule="Shortcut" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountains" translatesAutoresizingMaskIntoConstraints="NO" id="SdI-TT-mCV">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SdI-TT-mCV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AU1-rk-N2I"/>
+                            <constraint firstItem="SdI-TT-mCV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Fz0-7S-KEx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SdI-TT-mCV" secondAttribute="trailing" id="MVx-bq-24M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SdI-TT-mCV" secondAttribute="bottom" id="oSc-Et-ugD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="W1o-Cc-3rD">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="qAD-Cj-uGL">
+                            <connections>
+                                <segue destination="Gg0-4N-McP" kind="show" id="Ghe-Ks-yyW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="118.29085457271366"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="A0E-lL-IjB">
+            <objects>
+                <viewController storyboardIdentifier="spaceVC" id="Gg0-4N-McP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wBC-Vq-6gG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Space" translatesAutoresizingMaskIntoConstraints="NO" id="Ryp-vW-aFa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SxS-3W-CGJ" firstAttribute="bottom" secondItem="Ryp-vW-aFa" secondAttribute="bottom" id="RDb-0p-oKJ"/>
+                            <constraint firstItem="Ryp-vW-aFa" firstAttribute="top" secondItem="wBC-Vq-6gG" secondAttribute="top" id="bAI-zw-xRb"/>
+                            <constraint firstItem="SxS-3W-CGJ" firstAttribute="trailing" secondItem="Ryp-vW-aFa" secondAttribute="trailing" id="kcT-Dx-njh"/>
+                            <constraint firstItem="Ryp-vW-aFa" firstAttribute="leading" secondItem="wBC-Vq-6gG" secondAttribute="leading" id="nzk-GB-APm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SxS-3W-CGJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="5Va-Th-DRq">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="cs5-H3-JDL">
+                            <connections>
+                                <segue destination="Qcl-c1-7p2" kind="show" id="22W-iv-WaW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XCg-iR-3GP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1270" y="117"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="O63-yJ-5iB">
+            <objects>
+                <viewController storyboardIdentifier="oceanVC" id="Qcl-c1-7p2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qiZ-nc-zHS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ocean" translatesAutoresizingMaskIntoConstraints="NO" id="C3V-4e-ITH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="M0n-Rr-GdS" firstAttribute="bottom" secondItem="C3V-4e-ITH" secondAttribute="bottom" id="1Wd-LE-ne0"/>
+                            <constraint firstItem="C3V-4e-ITH" firstAttribute="leading" secondItem="qiZ-nc-zHS" secondAttribute="leading" id="8kW-Ob-Lo4"/>
+                            <constraint firstItem="C3V-4e-ITH" firstAttribute="top" secondItem="qiZ-nc-zHS" secondAttribute="top" id="O17-k2-fSg"/>
+                            <constraint firstItem="M0n-Rr-GdS" firstAttribute="trailing" secondItem="C3V-4e-ITH" secondAttribute="trailing" id="Pdy-Oy-NRy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M0n-Rr-GdS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zho-MX-jOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2103" y="117"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cdm-IQ-kpQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n72-dw-ez2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vAJ-m1-NHZ">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MmU-qx-11O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNr-N2-43Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-343" y="118"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Mountains" width="375" height="667"/>
+        <image name="Ocean" width="375" height="667"/>
+        <image name="Space" width="375" height="667"/>
+    </resources>
 </document>
