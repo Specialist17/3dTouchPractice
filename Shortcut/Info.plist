@@ -41,5 +41,38 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Mountains</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).mountains</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Sooo majestic</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>MountainShort</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Space</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).space</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Sooo majestic</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>SpaceShort</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Oceans</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).oceans</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Sooo wet!!!</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>OceanShort</string>
+		</dict>
+	</array>
 </dict>
 </plist>
