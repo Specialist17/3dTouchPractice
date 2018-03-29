@@ -67,7 +67,7 @@
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>Oceans</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>$(PRODUCT_BUNDLE_IDENTIFIER).oceans</string>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).ocean</string>
 			<key>UIApplicationShortcutItemSubtitle</key>
 			<string>Sooo wet!!!</string>
 			<key>UIApplicationShortcutItemIconFile</key>
