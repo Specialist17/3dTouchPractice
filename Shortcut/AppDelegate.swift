@@ -35,20 +35,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
         if let type = shortcutItem.type.components(separatedBy: ".").last {
             
-            let navVC = window?.rootViewController as! UINavigationController
+            let navVC = window?.rootViewController as! UITabBarController
             navVC.setViewControllers(vcsArray, animated: false)
             
             switch type {
             case ShortcutType.space.rawValue:
-                navVC.popToViewController(vcsArray[1], animated: true)
+                navVC.selectedIndex = 1
                 completionHandler(true)
             case ShortcutType.ocean.rawValue:
-                navVC.popToViewController(vcsArray[2], animated: true)
+                navVC.selectedIndex = 2
                 completionHandler(true)
             default:
-                navVC.popToRootViewController(animated: true)
+                navVC.selectedIndex = 0
                 completionHandler(true)
-                print("hola")
             }
         }
         

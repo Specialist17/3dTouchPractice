@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n72-dw-ez2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BiI-UB-Irq">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountains" translatesAutoresizingMaskIntoConstraints="NO" id="SdI-TT-mCV">
-                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -31,17 +31,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Mountains" image="MountainShort" selectedImage="MountainShort" id="f7r-g9-PZl"/>
                     <navigationItem key="navigationItem" title="Title" id="W1o-Cc-3rD">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="qAD-Cj-uGL">
-                            <connections>
-                                <segue destination="Gg0-4N-McP" kind="show" id="Ghe-Ks-yyW"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="qAD-Cj-uGL"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="456.80000000000001" y="118.29085457271366"/>
+            <point key="canvasLocation" x="1006" y="-332"/>
         </scene>
         <!--Title-->
         <scene sceneID="A0E-lL-IjB">
@@ -52,7 +49,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Space" translatesAutoresizingMaskIntoConstraints="NO" id="Ryp-vW-aFa">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -64,19 +61,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SxS-3W-CGJ"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Space" image="SpaceShort" selectedImage="SpaceShort" id="Siw-hn-BAW"/>
                     <navigationItem key="navigationItem" title="Title" id="5Va-Th-DRq">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="cs5-H3-JDL">
-                            <connections>
-                                <segue destination="Qcl-c1-7p2" kind="show" id="22W-iv-WaW"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="cs5-H3-JDL"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XCg-iR-3GP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1270" y="117"/>
+            <point key="canvasLocation" x="1871" y="117"/>
         </scene>
-        <!--OceanVC-->
+        <!--Ocean-->
         <scene sceneID="O63-yJ-5iB">
             <objects>
                 <viewController storyboardIdentifier="oceanVC" id="Qcl-c1-7p2" customClass="OceanVC" customModule="Shortcut" customModuleProvider="target" sceneMemberID="viewController">
@@ -85,7 +79,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ocean" translatesAutoresizingMaskIntoConstraints="NO" id="C3V-4e-ITH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -97,33 +91,38 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M0n-Rr-GdS"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Ocean" image="OceanShort" selectedImage="OceanShort" id="zos-8r-Ubx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zho-MX-jOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2103" y="117"/>
+            <point key="canvasLocation" x="1006" y="613"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Cdm-IQ-kpQ">
+        <!--Tab Bar Controller-->
+        <scene sceneID="X08-zq-Igq">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n72-dw-ez2" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BiI-UB-Irq" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vAJ-m1-NHZ">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CMF-9w-BxE">
                         <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MmU-qx-11O"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="jZA-qp-VL3"/>
+                        <segue destination="Gg0-4N-McP" kind="relationship" relationship="viewControllers" id="11b-ia-Vbp"/>
+                        <segue destination="Qcl-c1-7p2" kind="relationship" relationship="viewControllers" id="1nP-c8-Rgx"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pNr-N2-43Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ldp-gB-U7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-343" y="118"/>
+            <point key="canvasLocation" x="156.80000000000001" y="117.48768472906404"/>
         </scene>
     </scenes>
     <resources>
+        <image name="MountainShort" width="35" height="35"/>
         <image name="Mountains" width="375" height="667"/>
         <image name="Ocean" width="375" height="667"/>
+        <image name="OceanShort" width="35" height="35"/>
         <image name="Space" width="375" height="667"/>
+        <image name="SpaceShort" width="35" height="35"/>
     </resources>
 </document>
