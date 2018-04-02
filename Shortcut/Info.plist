@@ -63,16 +63,6 @@
 			<key>UIApplicationShortcutItemIconFile</key>
 			<string>SpaceShort</string>
 		</dict>
-		<dict>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Oceans</string>
-			<key>UIApplicationShortcutItemType</key>
-			<string>$(PRODUCT_BUNDLE_IDENTIFIER).ocean</string>
-			<key>UIApplicationShortcutItemSubtitle</key>
-			<string>Sooo wet!!!</string>
-			<key>UIApplicationShortcutItemIconFile</key>
-			<string>OceanShort</string>
-		</dict>
 	</array>
 </dict>
 </plist>

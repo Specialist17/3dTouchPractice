@@ -16,13 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+       
+        let oceanShortcut = UIMutableApplicationShortcutItem(type: "\(String(describing: Bundle.main.bundleIdentifier)).ocean", localizedTitle: "Ocean", localizedSubtitle: "it's so wet oh mai gah!", icon: UIApplicationShortcutIcon.init(templateImageName: "OceanShort"), userInfo: nil)
         
-        let mountainsVC = storyboard.instantiateViewController(withIdentifier: "mountainsVC") as! MountainsVC
-        let spaceVC = storyboard.instantiateViewController(withIdentifier: "spaceVC") as! SpaceVC
-        let oceanVC = storyboard.instantiateViewController(withIdentifier: "oceanVC") as! OceanVC
-        
-        vcsArray = [mountainsVC, spaceVC, oceanVC]
+        application.shortcutItems = [oceanShortcut]
         return true
     }
     
@@ -36,7 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let type = shortcutItem.type.components(separatedBy: ".").last {
             
             let navVC = window?.rootViewController as! UITabBarController
-            navVC.setViewControllers(vcsArray, animated: false)
             
             switch type {
             case ShortcutType.space.rawValue:
